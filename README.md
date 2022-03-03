@@ -1,5 +1,3 @@
-# Mbissi_kongo_11_04032022
-
 # Kasa
 Project 11 of Open Classrooms "Front-end Developer programme"
 
