@@ -1,7 +1,7 @@
 import {component} from 'react'
 import Hero from '../../components/Hero';
 import RentalList from '../../components/RentalList';
-import backgroundhome from '../../Assets/background-home.png'
+import backgroundHome from '../../Assets/background-home.png'
 
 class Home extends component {
 
@@ -11,13 +11,12 @@ class Home extends component {
     }
 
     render() {
-
         return (
             <div className="wrapper">
-                <Hero cover={backgroundhome} isTextVisible={true}/>
-                <RentalList/>
+            <Hero cover={backgroundHome} isTextVisible={true} />
+            <RentalList />
             </div>
-        )
+        );
     }
 }
 

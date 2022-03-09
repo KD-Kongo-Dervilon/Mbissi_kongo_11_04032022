@@ -1,22 +1,16 @@
-import {component} from 'react'
+import {component} from 'react';
 import PropTypes from 'prop-types';
 import '../RentalCard/RentalCard.css';
 
 class RentalCard extends component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-
     render() {
-        const {id, cover, title} = this.props
-
+        const { id, cover, title } = this.props;
         return (
             <article key={id} className="rental-card">
-                <img className="rental-card__img" alt="rental" src={cover}/>
+                <img className="rental-card__img" alt="rental" src={cover} />
                 <span className="rental-card__title">{title}</span>
             </article>
-        )
+        );
     }
 }
 
@@ -36,4 +30,4 @@ RentalCard.propTypes = {
     cover: PropTypes.string.isRequired,
 };
 
-export default RentalCard 
+export default RentalCard ;

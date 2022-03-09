@@ -12,24 +12,23 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
-        <Header />
-        <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/location">
-              <Rental />
-            </Route>
-            <Route path="/a-propos">
-              <About />
-            </Route>
-            <Route>
-              <Error />
-            </Route>
-        </Switch>
-        <Footer />
-      </Router>
+    <Router>
+      {/* <GlobalStyle> */}
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/location/:id" render={(props) => <Rental {...props} />} />
+        <Route path="/a-propos">
+          <About />
+        </Route>
+        <Route>
+          <Error />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
