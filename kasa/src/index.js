@@ -13,7 +13,6 @@ import './index.css';
 ReactDOM.render(
   <React.StrictMode>
       <Router>
-        {/* <GlobalStyle> */}
         <Header />
         <Switch>
             <Route exact path="/">
@@ -30,7 +29,6 @@ ReactDOM.render(
             </Route>
         </Switch>
         <Footer />
-        {/* </GlobalStyle> */}
       </Router>
   </React.StrictMode>,
   document.getElementById('root')
