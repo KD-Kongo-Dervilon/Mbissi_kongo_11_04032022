@@ -1,7 +1,7 @@
 import {component} from 'react'
 import '../Collapse/Collapse.css'
 
-class Collapse extends Component {
+class Collapse extends component {
     constructor(props) {
         super(props);
         this.handleToggleVisibility = this.handleToggleVisibility.bind(this);
