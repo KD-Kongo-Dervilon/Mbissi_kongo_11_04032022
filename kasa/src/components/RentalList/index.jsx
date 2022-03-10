@@ -1,59 +1,43 @@
-import { component } from "react";
-import { Link } from "react-router-dom";
-// import {rentals} from '../../Data/Rentals'
-import RentalCard from "../RentalCard/index.jsx";
-import "../RentalList/RentalList.css";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import RentalCard from '../RentalCard/index.jsx';
+import './RentalList.css';
 
-const rentals = "http://localhost:3000/data.json";
+const rentals = '/data.json';
 
-class RentalList extends component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        rentalData: [],
-    };
-}
+class RentalList extends Component {
+   constructor(props) {
+      super(props);
+      this.state = {
+         rentalData: [],
+      };
+   }
 
-    componentDidMount() {
-    //const {id} = this.props.match.params
-    fetch(rentals)
-        .then((response) => response.json())
-        .then((data) => {
-        this.setState({ rentalData: data });
-    });
-}
+   componentDidMount() {
+      fetch(rentals)
+         .then((response) => response.json())
+         .then((data) => {
+            this.setState({ rentalData: data });
+         });
+   }
 
-    render() {
-    const { rentalData } = this.state;
+   render() {
+      const { rentalData } = this.state;
 
-    if (rentalData.length === 0) {
-        return <div></div>;
-    }
+      if (rentalData.length === 0) {
+         return null;
+      }
 
-    return (
-        <div className="rental-list">
+      return (
+         <div className="rental-list">
             {rentalData.map(({ id, title, cover }) => (
-                <Link key={`location-${id}`} to={`/location/${id}`}>
-                    <RentalCard id={id} title={title} cover={cover} />
-                </Link>
+               <Link key={`location-${id}`} to={`/location/${id}`}>
+                  <RentalCard id={id} title={title} cover={cover} />
+               </Link>
             ))}
-        </div>
-        );
-    }
+         </div>
+      );
+   }
 }
 
-//function RentalList() {
-//    return (
-//        <div className="rental-list">
-//            { rentals.map(({ id, title, cover }) => 
-//            <div key={id}>
-//            <RentalCard
-//            title ={title}
-//            cover={cover} />
-//            </div>
-//           )}
-//        </div>
-//    )
-//}
-
-export default RentalList ;
+export default RentalList;

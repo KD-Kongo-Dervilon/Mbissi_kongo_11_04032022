@@ -1,38 +1,24 @@
-import { component } from 'react';
-import '../Rating/Rating.css';
+import React, { Component } from 'react';
 import starSolid from '../../Assets/star-solid.png';
 import starEmpty from '../../Assets/star-empty.png';
+import './Rating.css';
 
-class Rating extends component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-}
+class Rating extends Component {
+   render() {
+      const { rating } = this.props;
+      const range = [1, 2, 3, 4, 5];
 
-    render() {
-        const { rating } = this.props;
-        const range = [1, 2, 3, 4, 5];
-
-        return (
-            <div className="rating">
-            {range.map(
-                (rangeEl) =>
-                    rating >= rangeEl ? (
-                        <FontAwesomeIcon
-                        icon={faStar}
-                        key={rangeEl}
-                        style={{ color: '#FF6060' }}
-                    />
-                ) : (
-                    <FontAwesomeIcon
-                        icon={faStar}
-                        key={rangeEl}
-                        style={{ color: '#E3E3E3' }}
-                    />
-                )
+      return (
+         <div className="rating">
+            {range.map((rangeEl) =>
+               rating >= rangeEl ? (
+                  <img key={rangeEl} src={starSolid} alt="rating" />
+               ) : (
+                  <img key={rangeEl} src={starEmpty} alt="rating" />
+               )
             )}
-        </div>
-        );
-    }
+         </div>
+      );
+   }
 }
 export default Rating;

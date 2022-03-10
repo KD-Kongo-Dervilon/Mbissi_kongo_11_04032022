@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Redirect } from 'react-router';
 import Home from './Pages/Home';
@@ -10,9 +9,10 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import './index.css';
 
-ReactDOM.render(
-   <React.StrictMode>
-      <Router>
+class KasaRouter extends React.Component {
+   render() {
+      return (
+            <Router>
          <div className="app-wrapper">
             <Header />
             <Switch>
@@ -37,6 +37,8 @@ ReactDOM.render(
          </div>
          <Footer />
       </Router>
-   </React.StrictMode>,
-   document.getElementById('root')
-);
+      );
+   }
+}
+
+export default KasaRouter;

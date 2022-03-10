@@ -1,13 +1,22 @@
 .rental__title {
-    color: #ff6060;
-    font-size: 36px;
-    font-weight: 500;
-    margin: 1rem 0;
+   color: #ff6060;
+   font-size: 36px;
+   font-weight: 500;
+   margin: 1rem 0;
 }
 
 .rental__location {
-    color: #ff6060;
-    font-size: 18px;
-    font-weight: 500;
-    /* margin-bottom: 2rem; */
+   color: #ff6060;
+   font-size: 18px;
+   font-weight: 500;
+}
+
+@media screen and (max-width: 767px) {
+   .rental__title {
+      font-size: 18px;
+   }
+
+   .rental__location {
+      font-size: 14px;
+   }
 }

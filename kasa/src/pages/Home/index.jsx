@@ -1,32 +1,17 @@
-import {component} from 'react'
-import Hero from '../../components/Hero';
-import RentalList from '../../components/RentalList';
-import backgroundHome from '../../Assets/background-home.png'
+import React, { Component } from 'react';
+import Hero from '../../Components/Hero';
+import RentalList from '../../Components/RentalList';
+import backgroundHome from '../../Assets/background-home.png';
 
-class Home extends component {
-
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-
-    render() {
-        return (
-            <div className="wrapper">
+class Home extends Component {
+   render() {
+      return (
+         <div className="wrapper">
             <Hero cover={backgroundHome} isTextVisible={true} />
             <RentalList />
-            </div>
-        );
-    }
+         </div>
+      );
+   }
 }
 
-//function Home() {
-//    return (
-//        <div className="wrapper">
-//            <Hero />
-//            <RentalList/>
-//        </div>
-//    )
-//}
-
-export default Home 
+export default Home;
