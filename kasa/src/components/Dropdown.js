@@ -1,6 +1,5 @@
 import React from "react";
-/*import { useState } from 'react';*/
-/*import arrowUp from '../assets/arrow_up.svg;*/
+
 import "../styles/Dropdown.css";
 
 class Dropdown extends React.Component {
@@ -62,27 +61,3 @@ class Dropdown extends React.Component {
 }
 
 export default Dropdown;
-
-/* 
-const Dropdown = ({ title, content, type = 'large' }) => {
-	const [isOpen, setIsOpen] = useState(false);
-
-	return (
-		<article
-			className={'dropdown ' + (type === 'large' ? 'large' : 'small') + (isOpen ? '' : ' closed')}
-			onClick={() => {
-				setIsOpen(!isOpen)
-			}}>
-			<div className='dropdown__label'>
-				<h3>{title}</h3>
-				<img
-					className={isOpen ? 'arrow_down' : ''}
-					src={arrowUp}
-					alt='chevron to close or open dropdown'></img>
-			</div>
-			<div className='dropdown__content'>{content}</div>
-		</article>
-	);
-};
-
-export default Dropdown; */

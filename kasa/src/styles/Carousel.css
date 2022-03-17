@@ -3,9 +3,9 @@
 	height: 415px;
 	border-radius: 25px;
 	margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .carousel__img-wrap {
 	width: 100%;
@@ -20,17 +20,17 @@
 }
 
 .carousel__controls{
-    position: absolute;
-    font-size: 80px;
-    color: #FFFFFF;
-    padding: 24px;
+  position: absolute;
+  font-size: 80px;
+  color: #FFFFFF;
+  padding: 24px;
 	cursor: pointer;
 }
 .carousel__controls--next{
-    right: 0;
+  right: 0;
 }
 .carousel__controls--previous{
-    left:0;
+  left:0;
 }
 @media screen and (max-width: 809px) {
 .carousel {
@@ -39,8 +39,9 @@
 	margin-bottom: 15px;
 }
 .carousel__controls{
-    font-size: 19px;
-    padding: 6px;
-    }
+  
+  font-size: 19px;
+  padding: 6px;
+}
 }
 
