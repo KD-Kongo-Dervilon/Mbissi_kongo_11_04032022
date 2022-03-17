@@ -16,6 +16,8 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },
+
+  "homepage": "https://KD-Kongo-Dervilon.github.io/Mbissi_kongo_11_04032022",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

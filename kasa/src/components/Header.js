@@ -1,3 +1,5 @@
+/* import { Link, useLocation } from 'react-router-dom'; */
+/* import kasaLogo from "../assets/kasa_frame_logo.svg" */
 import React from "react";
 import Nav from "./Nav";
 import "../styles/Header.css";
@@ -14,8 +16,8 @@ class Header extends React.Component {
 						height="68"
 						viewBox="0 0 211 68"
 						xmlns="http://www.w3.org/2000/svg"
-            className="header__logo"
-					>
+                        className="header__logo"
+			            >
 						<path
 							d="M20.0745 34.6485L8.84014 46.1362V62.2561H0V0H8.84014V34.8338L42.359 0H52.4883L26.1521 27.9782L54.33 62.2561H44.0165L20.0745 34.6485Z"
 							
@@ -45,3 +47,29 @@ class Header extends React.Component {
 }
 
 export default Header;
+
+
+/* 
+const Header = () => {
+	const location = useLocation();
+
+	return (
+		<header className="header">
+			<Link to="/">
+				<img src={kasaLogo} alt="Kaza logo" className='header__logo' />
+			</Link>
+			<nav className="header__nav">
+				<ul className="header__nav-list">
+					<li className={location.pathname === '/' ? 'active' : ''}>
+						<Link to="/" className='header__nav-link'>Accueil</Link>
+					</li>
+					<li className={location.pathname === '/about' ? 'active' : ''}>
+						<Link to="/about" className='header__nav-link'>A Propos</Link>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	);
+};
+
+export default Header; */
