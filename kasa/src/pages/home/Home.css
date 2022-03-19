@@ -4,7 +4,7 @@
 			rgba(0, 0, 0, 0.5) 0%,
 			rgba(0, 0, 0, 0.5) 100%
 		),
-		url("../img/home-cover.png");
+		url("../../img/home-cover.png");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -16,6 +16,8 @@
 	margin-bottom: 43px;
 	padding: 0 16px;
 }
+
+
 .home-title {
 	font-family: "Montserrat", sans-serif;
 	font-size: 48px;
@@ -34,6 +36,7 @@
 	justify-content: center;
 	padding: 50px
 }
+
 .rentals-grid a {
 	text-decoration: none;
 }
@@ -51,6 +54,7 @@
 		line-height: 24px;
 	}
 }
+
 @media screen and (max-width: 809px) {
 	.home-title__wrap {
 		height: 111px;

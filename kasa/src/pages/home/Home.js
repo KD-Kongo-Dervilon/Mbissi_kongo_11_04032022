@@ -1,10 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-import Card from "../components/Card";
-
-import "../styles/Section.css";
-import "../styles/Home.css";
+import Card from "../../components/card/Card";
+import "../../styles/Section.css";
+import "../home/Home.css";
 
 
 class Home extends React.Component {

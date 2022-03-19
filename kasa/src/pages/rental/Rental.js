@@ -1,15 +1,12 @@
 import React from "react";
 import { withRouter} from "react-router-dom";
-
-import Carousel from "../components/Carousel";
-import Dropdown from "../components/Dropdown";
-import Tag from "../components/Tag";
-import Rating from "../components/Rating";
-
-import Error from "../pages/Error"
-
-import "../styles/Section.css";
-import "../styles/Rental.css";
+import Carousel from "../../components/carousels/Carousel";
+import Dropdown from "../../components/dropdown/Dropdown";
+import Tag from "../../components/tag/Tag";
+import Rating from "../../components/rating/Rating";
+import Error from "../error/Error";
+import "../../styles/Section.css";
+import "../../pages/rental/Rental.css";
 
 class Rental extends React.Component {
 	constructor(props) {

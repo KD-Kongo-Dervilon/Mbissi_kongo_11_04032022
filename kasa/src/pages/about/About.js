@@ -1,9 +1,7 @@
 import React from "react";
-
-import Dropdown from "../components/Dropdown";
-
-import "../styles/Section.css";
-import "../styles/About.css";
+import Dropdown from "../../components/dropdown/Dropdown";
+import "../../styles/Section.css";
+import "../../pages/about/About.css";
 
 class About extends React.Component {
 	render() {

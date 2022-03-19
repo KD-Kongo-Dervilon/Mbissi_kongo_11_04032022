@@ -1,10 +1,9 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-
-import Home from "../pages/Home";
-import Rental from "../pages/Rental";
-import About from "../pages/About";
-import Error from "../pages/Error";
+import Home from "../../pages/home/Home";
+import Rental from "../../pages/rental/Rental";
+import About from "../../pages/about/About";
+import Error from "../../pages/error/Error";
 
 class KasaRouter extends React.Component {
 	render() {

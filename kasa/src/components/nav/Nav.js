@@ -2,7 +2,7 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
-import "../styles/Nav.css";
+import "../nav/Nav.css";
 
 class Nav extends React.Component {
 	render() {

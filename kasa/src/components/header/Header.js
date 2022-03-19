@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "./Nav";
-import "../styles/Header.css";
+import Nav from "../nav/Nav";
+import "../header/Header.css";
 
 
 

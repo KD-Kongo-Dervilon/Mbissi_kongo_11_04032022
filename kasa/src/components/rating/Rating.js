@@ -1,6 +1,5 @@
 import React from "react";
-
-import "../styles/Rating.css";
+import "../rating/Rating.css";
 
 class Rating extends React.Component {
 	getRating = (rating) => {
