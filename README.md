@@ -1,7 +1,7 @@
 # Kasa
 Lien du Project Kasa :
 
-https://kd-kongo-dervilon.github.io/Mbissi_kongo_11_04032022/
+https://flamboyant-shockley-9484d3.netlify.app/
 
 Project 11 of Open Classrooms "Front-end Developer programme"
 
