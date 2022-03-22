@@ -11,7 +11,7 @@ import "../../pages/rental/Rental.css";
 class Rental extends React.Component {
 	constructor(props) {
 		super(props);
-		// N’appelez pas `this.setState()` ici !
+	
 		this.state = { rental: this.findRental() };
 	}
 
@@ -66,8 +66,9 @@ class Rental extends React.Component {
 							</div>
 						</div>
 					</div>
-				</main> : <Error></Error>}
-				
+				</main> :
+				<Error></Error>
+				}
 			</>
 		);
 	}

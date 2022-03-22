@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route,  } from "react-router-dom";
 import Home from "../../pages/home/Home";
 import Rental from "../../pages/rental/Rental";
 import About from "../../pages/about/About";
@@ -9,6 +9,9 @@ class KasaRouter extends React.Component {
 	render() {
 		return (
 			<Switch>
+				<Route exact path="/Mbissi_kongo_11_04032022">
+					<Home rentals={this.props.rentals} />
+				</Route>
 				<Route exact path="/">
 					<Home rentals={this.props.rentals} />
 				</Route>
