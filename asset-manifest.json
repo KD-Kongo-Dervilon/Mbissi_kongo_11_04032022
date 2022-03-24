@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Mbissi_kongo_11_04032022/static/css/main.4d2100fa.css",
+    "main.js": "/Mbissi_kongo_11_04032022/static/js/main.d097962c.js",
+    "static/media/about-cover.png": "/Mbissi_kongo_11_04032022/static/media/about-cover.6645ad51cd19c02836ae.png",
+    "static/media/home-cover.png": "/Mbissi_kongo_11_04032022/static/media/home-cover.38e2665abec1bb38a9e8.png",
+    "index.html": "/Mbissi_kongo_11_04032022/index.html",
+    "main.4d2100fa.css.map": "/Mbissi_kongo_11_04032022/static/css/main.4d2100fa.css.map",
+    "main.d097962c.js.map": "/Mbissi_kongo_11_04032022/static/js/main.d097962c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d2100fa.css",
+    "static/js/main.d097962c.js"
+  ]
+}
