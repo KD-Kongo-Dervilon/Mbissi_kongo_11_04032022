@@ -1,9 +1,10 @@
 .dropdown {
-	width: 100%;
+	width: 80%;
 	font-family: "Montserrat", sans-serif;
 	display: flex-wrap;
 	background: #f6f6f6;
 	border-radius: 5px;
+	margin: auto ;
 }
 .dropdown__toggle {
 	display: flex;

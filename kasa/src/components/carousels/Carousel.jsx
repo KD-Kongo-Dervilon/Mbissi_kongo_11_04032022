@@ -62,8 +62,9 @@ class Carousel extends React.Component {
 						alt="Vue de l'appartement"
 						aria-label={`Photo ${this.state.currentPicture + 1} sur ${
 							this.props.pictures.length
-						}`}
-					></img>
+						}`}>
+						</img>
+						<span className="carousel-number">{` ${this.state.currentPicture + 1} / ${this.props.pictures.length}`}</span>
 				</div>
 
 				{this.state.morePictures ? (
